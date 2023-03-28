@@ -304,3 +304,21 @@ hr{
     transform: translateY(-50%);
   }
   
+.contrainerp{
+    margin-left: 200px;
+    width: 1000px;
+    height: 500px;
+}
+
+.publ{
+    display: flex;
+    justify-content: center;
+    margin-left: 82px;
+    
+}
+
+.fiesta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
