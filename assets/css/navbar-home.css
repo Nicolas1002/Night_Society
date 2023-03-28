@@ -12,6 +12,7 @@
  box-sizing: border-box;
  font-family: "Poppins", sans-serif;
 }
+<<<<<<< HEAD
 
 
 body{
@@ -25,6 +26,15 @@ body{
     padding-left: 0;
 }
 .my-nav li, .list{
+=======
+body{
+ background: #050A26;
+}
+.my-nav ul{
+    padding-left: 0;
+}
+.my-nav li{
+>>>>>>> 1228231219ea2049f78ebb58f9daed145046d4c4
     list-style: none;
 }
 .my-nav li a{
@@ -36,7 +46,11 @@ body{
  bottom: 0;
  height: 100%;
  left: 0;
+<<<<<<< HEAD
  background: #3F51B5;
+=======
+ background: #050A26;
+>>>>>>> 1228231219ea2049f78ebb58f9daed145046d4c4
  width: 90px;
  overflow: hidden;
  transition: width 0.2s linear;
@@ -80,16 +94,24 @@ a{
     top: 12px;
     margin-left: 10px;
 }
+<<<<<<< HEAD
 
  a:hover{
     background: #d30aa1;
 }
 
 .laptop-screen nav:hover{
+=======
+a:hover{
+    background: #d30aa1;
+}
+nav:hover{
+>>>>>>> 1228231219ea2049f78ebb58f9daed145046d4c4
     width: 280px;
     transition: all 0.5s;
 }
 
+<<<<<<< HEAD
 
 .salir{
   position: absolute;
@@ -112,4 +134,9 @@ a{
     .mobile-screen{
         display: flex;
     }
+=======
+.salir{
+  position: absolute;
+  bottom: 0;  
+>>>>>>> 1228231219ea2049f78ebb58f9daed145046d4c4
 }
