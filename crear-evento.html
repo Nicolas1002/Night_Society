@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BIT">
+    <meta name="description" content="Night Society, donde la magia de la noche cobra vida
+                                                     Where the magic of the night comes alive">
+    <meta name="keywords" content="eventos, fiesta, farras, rumba, trago, cerveza, polas, diversion">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.jpeg">
+    <!-- icones del nav -->
+    <script src="https://kit.fontawesome.com/b2884f0c38.js" crossorigin="anonymous"></script>
+    <!-- fuente de letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">  
+    <!-- iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- style-->
+    <link rel="stylesheet" href="assets/style-eventos.css" />
+    <!-- Titulo -->
+    <title>Nigth Society</title>    
+</head>
+
+<body>
+        
+    <nav class="my-nav position-fixed">
+        <ul>
+            <li>
+                <a href="#"class="logo ">
+                    <img src="log.jpeg" alt="">
+                    <span class="obj-sidebar name fw-bold">Nigth Society</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-home"></i>
+                    <span class="obj-sidebar">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-user"></i>
+                    <span class="obj-sidebar">Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="eventos.html" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-calendar-days"></i>
+                    <span class="obj-sidebar">Eventos</span>
+                </a>
+            </li>
+            <li>
+                <a href="crear-evento.html" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-calendar-plus"></i>
+                    <span class="obj-sidebar">Crear Evento</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-star"></i>
+                    <span class="obj-sidebar">Calificar Farra</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-user-group"></i>
+                    <span class="obj-sidebar">Amigos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="obj-sidebar">Ayuda</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="salir style-nav-a" rel="noopener noreferrer">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="obj-sidebar">Cerrar Sesión</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="vh-100 d-flex justify-content-center align-items-center">
+    
+  <form class="w-50 row g-3 container-crear-evento d-flex justify-content-center align-items-center">
+    <div class=" d-flex justify-content-center icon-craer-evento">
+        <i class="bi bi-calendar-plus-fill"></i>
+   </div>
+    <div class="crear-evento m-auto col-12 d-flex justify-content-center">
+        <h2 class="fw-bold">Crear Evento</h2>   
+    </div>
+
+    <div class="col-12 col-md-10">
+      <label for="inputext" class="form-label ">Nombre: </label>
+      <input type="text" class="form-control" id="inputext" placeholder="Nombre evento" required>
+    </div>
+   
+    <div class="col-12 col-md-10">
+      <label for="inputAddress" class="form-label">Dirección: </label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Dirección" required>
+    </div>
+
+    <div class="col-12 col-md-5">
+      <label for="inputDate" class="form-label">Fecha: </label>
+      <input type="date" class="form-control" id="inputDate" placeholder="" required>
+    </div>
+
+    <div class="col-12 col-md-5">
+        <label for="inputTime" class="form-label">Hora: </label>
+        <input type="time" class="form-control" id="inputTime" placeholder="" required>
+    </div>
+
+    <div class="mb-3 col-12 col-md-10">
+        <label for="formFileMultiple" class="form-label">Adjuntar archivos:</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+      </div>
+
+    <div class="col-12 col-md-10">
+        <label for="inputComentarios" class="form-label">Comentarios: </label>
+       <textarea id="imputcomentarios" class="form-control" name="comentarios" placeholder="Comentarios" required></textarea>
+    </div>
+       
+    <div class="col-12 d-flex justify-content-center ">
+      <!-- Button trigger modal -->
+        <button type="submit" class="btn btn-primary mt-3 mb-4 w-25" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Crear  
+        </button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header conf-crear-evento ">
+                <h1 class="modal-title fs-5 fw-bold " id="staticBackdropLabel">Seguro desea crear el evento</h1>
+                <button type="button" class="btn-close bg-white conf-crear-evento" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center fw-light">
+                Una vez creado el evento, sera publicado. <br>
+                Desea Continuar ?
+                </div>
+                <div class="modal-footer conf-crear-evento">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+                    <a href="eventos.html" rel="noopener noreferrer">
+                <button type="button" class="btn btn-primary fw-bold"> SI </button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </form>
+
+</div>
+
+
+<!-- script nav -->
+<script src="js/bootobj-sidebar"></script>
+<!-- script style bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
