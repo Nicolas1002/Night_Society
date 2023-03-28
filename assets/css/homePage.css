@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header home page */
+
+header{
+    width: 100%;
+    height: 600px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.nav-item a{
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.sig-in{
+    background-color: #190F40;
+    color: white !important;
+    border-radius: 15px !important;
+}
+
+.sig-in:hover{
+    background-color: #571673;
+}
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text img{
+    width: 300px;
+    height: 300px;
+}
+
+.text h1{
+    font-size: 60px;
+}
+
+.text p{
+    font-size: 16px;
+}
+.register{
+    width: 200px !important;
+    background-color: #190F40;
+    color: white !important;
+    border-radius: 15px !important;
+}
+
+.register:hover{
+    background-color: #571673;
+}
+
+.img-text img{
+    width: 500px;
+    height: 500px;
+}
+
+.textos p{
+    width: 500px;
+    text-align: justify;
+}
+
+.img-text-2 img{
+    width: 500px;
+    height: 500px;
+}
+
+.textos-2 p{
+    width: 500px;
+    text-align: justify;
+}
+.fo{
+    background-color: #190F40;
+    padding: 35px;
+}
+.red a i{
+    color: white;
+    font-size: 26px;
+}
+
+.name-log h4{
+    margin-top: 30px;
+    color: white;
+}
+.name-log p{
+    color: white;
+}
+.links-privacity{
+    text-align: center;
+}
+.links-privacity a{
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+.img-text img{
+    width: 300px;
+    height: 300px;
+}
+.textos p{
+    width: 400px;
+    text-align: justify;
+}
+.img-text-2 img{
+    width: 300px;
+    height: 300px;
+}
+.textos-2 p{
+    width: 400px;
+    text-align: justify;
+}
+}
+
+
+@media (max-width: 700px) {
+    .logo h3{
+        font-size: 18px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .img-text img{
+        width: 220px;
+        height: 220px;
+    }
+    .textos p{
+        width: 320px;
+        text-align: justify;
+    }
+    .img-text-2 img{
+        width: 220px;
+        height: 220px;
+    }
+    .textos-2 p{
+        width: 320px;
+        text-align: justify;
+    }
+    }
+
+
+    
+@media (max-width: 600px) {
+
+    .logo h3{
+        font-size: 16px;
+    }
+    .nav-link{
+        font-size: 10px;
+    }
+
+    .container-xxl{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .img-text img{
+        width: 220px;
+        height: 220px;
+    }
+    .textos p{
+        width: 320px;
+        text-align: justify;
+    }
+    .img-text-2 img{
+        width: 220px;
+        height: 220px;
+    }
+    .textos-2 p{
+        width: 320px;
+        text-align: justify;
+    }
+    }
