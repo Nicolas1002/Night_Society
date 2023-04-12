@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigos</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/b2884f0c38.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-body">
+
+    <!-- Barra de navegacion -->
     <nav
-        class="absolute top-0 bottom-0 left-0 w-20 h-150vh overflow-hidden duration-200 ease-linear bg-sidebar shadow-xl hover:w-72 transition-width">
+        class="absolute top-0 bottom-0 left-0 w-20 overflow-hidden duration-200 ease-linear shadow-xl h-150vh bg-sidebar hover:w-72 transition-width">
         <ul class="pl-0 ">
 
             <li>
                 <a href="#" class="flex px-5 py-3 m-0 text-center transition-all duration-500 hover:bg-hoverside ease">
                     <img class="w-10 h-10 rounded-full" src="img/tres.jpg" alt="Logotipo">
-                    <span class="relative pl-5 text-sm font-bold text-white uppercase top-3 w-48 ">Amparo Grisales</span>
+                    <span class="relative w-48 pl-5 text-sm font-bold text-white uppercase top-3 ">Amparo
+                        Grisales</span>
                 </a>
             </li>
 
@@ -51,7 +55,8 @@
             </li>
 
             <li>
-                <a class="relative table p-2 text-sm text-white w-72 hover:bg-hoverside" href="../calificar-fiesta.html">
+                <a class="relative table p-2 text-sm text-white w-72 hover:bg-hoverside"
+                    href="../calificar-fiesta.html">
                     <i class="relative w-16 h-10 text-xl text-center top-3 fas fa-star"></i>
                     <span class="relative ml-2 top-3">Calificar Farra</span>
                 </a>
@@ -64,12 +69,12 @@
                 </a>
             </li>
 
-            <!-- <li>
+            <li>
                 <a class="relative table p-2 text-sm text-white w-72 hover:bg-hoverside" href="#">
                     <i class="relative w-16 h-10 text-xl text-center top-3 fas fa-question-circle"></i>
                     <span class="relative ml-2 top-3">Ayuda</span>
                 </a>
-            </li> -->
+            </li>
 
             <li>
                 <a class="absolute bottom-0 table p-3 text-sm text-white w-72 hover:bg-hoverside" href="#"
@@ -81,7 +86,7 @@
 
         </ul>
     </nav>
-
+    <!-- Barra de busqueda -->
     <form class="flex justify-center pt-5" action="#">
         <div class="flex justify-around p-2 bg-white border rounded-lg w-80 border-grey-500">
             <img class="w-5 m-2" src="img/cerveza.png" alt="">
@@ -96,15 +101,20 @@
 
     <div class="absolute top-0 flex justify-end right-5 ">
         <div class="m-3">
-            <a href="#"><img class="w-7" src="img/notificaciones.png" alt="Campana"></a>
+            <a href="#">
+                <i class="fa-solid fa-bell fa-2xl" style="color: #190f40"></i>
+            </a>
         </div>
+
         <div class="m-3">
-            <a href="#"><img class="w-7" src="img/agregar-mensaje.png" alt="Notificaciones"></a>
+            <a href="#">
+                <i class="fa-solid fa-comment fa-2xl" style="color: #190f40"></i>
+            </a>
 
         </div>
     </div>
 
-
+    <!-- Administrador de contactos -->
     <div class="flex flex-wrap items-center justify-center gap-20 mt-20 ">
         <main class="bg-white rounded-lg w-96 shadow-custom">
 
@@ -158,22 +168,22 @@
 
             <div class="py-2 h-14">
                 <button
-                    class="block w-56 p-2 mx-auto font-medium bg-sidebar text-white border border-gray-200 rounded-md hover:bg-hoverside ">Ver
+                    class="block w-56 p-2 mx-auto font-medium text-white border border-gray-200 rounded-md bg-sidebar hover:bg-hoverside ">Ver
                     todos</button>
             </div>
 
 
         </main>
-
-        <div class="flex flex-col gap-5 p-4 bg-white rounded-lg shadow-custom border">
-            <div class="h-48 bg-white rounded-xl w-96 border">
+        <!-- Informacion de los usuarios -->
+        <div class="flex flex-col gap-5 p-4 bg-white border rounded-lg shadow-custom">
+            <div class="h-48 bg-white border rounded-xl w-96">
                 <div class="flex">
                     <div class="md:flex-shrink-0">
                         <img class="object-cover w-full h-48 rounded-r-none rounded-l-xl" src="img/tuli.jpg"
                             alt="Imagen de ejemplo">
                     </div>
                     <div class="p-7 w-max">
-                        <div class="mb-4 text-sm font-bold text-center text-hoverside uppercase">Nigth Society
+                        <div class="mb-4 text-sm font-bold text-center uppercase text-hoverside">Nigth Society
                         </div>
                         <p class="text-lg font-medium text-center hover:text-xl">Luisa Avila</p>
                         <p class="text-gray-500">Estudiante de Modelaje</p>
@@ -187,14 +197,14 @@
             </div>
 
 
-            <div class="h-48 bg-white rounded-xl w-96 border">
+            <div class="h-48 bg-white border rounded-xl w-96">
                 <div class="flex">
                     <div class="md:flex-shrink-0">
                         <img class="object-cover w-40 h-48 rounded-r-none rounded-l-xl" src="img/Hombre2.jpg"
                             alt="Imagen de ejemplo">
                     </div>
                     <div class="p-7 w-max">
-                        <div class="mb-4 text-sm font-bold text-center text-hoverside uppercase">Nigth Society
+                        <div class="mb-4 text-sm font-bold text-center uppercase text-hoverside">Nigth Society
                         </div>
                         <p class="text-lg font-medium text-center hover:text-xl">Javier Sanchez</p>
                         <p class="text-gray-500">Estudiante de Medicina</p>
@@ -208,13 +218,13 @@
             </div>
             <div class="py-2 h-14">
                 <button
-                    class="block p-2 mx-auto font-medium text-white bg-sidebar border-gray-200 rounded-md w-72 hover:bg-hoverside">
+                    class="block p-2 mx-auto font-medium text-white border-gray-200 rounded-md bg-sidebar w-72 hover:bg-hoverside">
                     Ver Mas
                 </button>
             </div>
         </div>
 
-
+        <!-- Contactos -->
         <ul role="list"
             class="absolute right-0 max-w-sm p-2 bg-white divide-y divide-gray-200 rounded-lg rounded-r-none dark:divide-gray-700 shadow-custom ">
             <h5 class="text-lg font-semibold text-center text-hoverside">Contactos</h5>
@@ -351,75 +361,73 @@
             </div>
         </ul>
     </div>
-
+    <!-- Sugerencias de amistad -->
     <div
-        class="flex justify-center flex-wrap gap-5 items-center bg-white w-max h-max mx-auto mt-12 p-7 rounded-lg shadow-custom">
+        class="flex flex-wrap items-center justify-center gap-5 mx-auto mt-12 bg-white rounded-lg w-max h-max p-7 shadow-custom">
 
 
-        <div class="bg-white rounded-lg overflow-hidden w-max h-max text-center border border-slate-200">
-            <img class="w-24 h-24 rounded-full mx-auto p-2" src="img/michael-austin-jgSAuqMmJUE-unsplash.jpg"
+        <div class="overflow-hidden text-center bg-white border rounded-lg w-max h-max border-slate-200">
+            <img class="w-24 h-24 p-2 mx-auto rounded-full" src="img/michael-austin-jgSAuqMmJUE-unsplash.jpg"
                 alt="Friend's name">
             <div class="p-4">
                 <h2 class="text-lg font-semibold ">Juana del Rio</h2>
-                <span class="text-gray-600 text-sm text-center">1 amigos en comun</span>
-                <div class="flex justify-between items-center mt-4">
+                <span class="text-sm text-center text-gray-600">1 amigos en comun</span>
+                <div class="flex items-center justify-between mt-4">
                     <button
-                        class="bg-sidebar hover:bg-hoverside text-white font-semibold py-2 px-4 rounded-full mx-auto">
+                        class="px-4 py-2 mx-auto font-semibold text-white rounded-full bg-sidebar hover:bg-hoverside">
                         Seguir</button>
 
                 </div>
             </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden w-max h-max text-center border border-slate-200">
-            <img class="w-24 h-24 rounded-full mx-auto p-2" src="img/stefan-stefancik-QXevDflbl8A-unsplash.jpg"
+        <div class="overflow-hidden text-center bg-white border rounded-lg shadow-lg w-max h-max border-slate-200">
+            <img class="w-24 h-24 p-2 mx-auto rounded-full" src="img/stefan-stefancik-QXevDflbl8A-unsplash.jpg"
                 alt="Friend's name">
             <div class="p-4">
                 <h2 class="text-lg font-semibold ">Maria Peña</h2>
-                <span class="text-gray-600 text-sm text-center">5 amigos en comun</span>
-                <div class="flex justify-between items-center mt-4">
+                <span class="text-sm text-center text-gray-600">5 amigos en comun</span>
+                <div class="flex items-center justify-between mt-4">
                     <button
-                        class="bg-sidebar hover:bg-hoverside text-white font-semibold py-2 px-4 rounded-full mx-auto">
+                        class="px-4 py-2 mx-auto font-semibold text-white rounded-full bg-sidebar hover:bg-hoverside">
                         Seguir</button>
 
                 </div>
             </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden w-max h-max text-center border border-slate-200">
-            <img class="w-24 h-24 rounded-full mx-auto p-2" src="img/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg"
+        <div class="overflow-hidden text-center bg-white border rounded-lg shadow-lg w-max h-max border-slate-200">
+            <img class="w-24 h-24 p-2 mx-auto rounded-full" src="img/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg"
                 alt="Friend's name">
             <div class="p-4">
                 <h2 class="text-lg font-semibold ">Maria Mora</h2>
-                <span class="text-gray-600 text-sm text-center">10 amigos en comun</span>
-                <div class="flex justify-between items-center mt-4">
+                <span class="text-sm text-center text-gray-600">10 amigos en comun</span>
+                <div class="flex items-center justify-between mt-4">
                     <button
-                        class="bg-sidebar hover:bg-hoverside text-white font-semibold py-2 px-4 rounded-full mx-auto">
+                        class="px-4 py-2 mx-auto font-semibold text-white rounded-full bg-sidebar hover:bg-hoverside">
                         Seguir</button>
 
                 </div>
             </div>
         </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden w-max h-max text-center border border-slate-200">
-            <img class="w-24 h-24 rounded-full mx-auto p-2" src="img/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+        <div class="overflow-hidden text-center bg-white border rounded-lg shadow-lg w-max h-max border-slate-200">
+            <img class="w-24 h-24 p-2 mx-auto rounded-full" src="img/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
                 alt="Friend's name">
             <div class="p-4">
                 <h2 class="text-lg font-semibold ">Jose Alvaro</h2>
-                <span class="text-gray-600 text-sm text-center">7 amigos en comun</span>
-                <div class="flex justify-between items-center mt-4">
+                <span class="text-sm text-center text-gray-600">7 amigos en comun</span>
+                <div class="flex items-center justify-between mt-4">
                     <button
-                        class="bg-sidebar hover:bg-hoverside text-white font-semibold py-2 px-4 rounded-full mx-auto">
+                        class="px-4 py-2 mx-auto font-semibold text-white rounded-full bg-sidebar hover:bg-hoverside">
                         Seguir</button>
 
                 </div>
             </div>
 
         </div>
-        <h2 class="w-32 text-center text-sidebar font-bold text-xl hover:text-hoverside hover:text-2xl">Sugerencias de
+        <h2 class="w-32 text-xl font-bold text-center text-sidebar hover:text-hoverside hover:text-2xl">Sugerencias de
             Amistad</h2>
     </div>
-
-
 
 </body>
 
